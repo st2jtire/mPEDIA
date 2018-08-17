@@ -18,11 +18,13 @@
                 if ($this.hasClass('moving') == false) {
                     $this.addClass('moving');
                     if ($(".detailSearchBox").css("display") == "block") {
+                        $(".detailSearchBtn").css("background", "#fff url(../images/sub/naesin_icon_open.png) no-repeat right center");
                         $(".detailSearchBox").slideUp(400,function(){
                             $this.removeClass('moving');
                         });
                         $(this).removeClass('active');
                     } else {
+                        $(".detailSearchBtn").css("background", "#fff url(../images/sub/naesin_icon_close.png) no-repeat right center");
                         $(".detailSearchBox").slideDown(400,function(){
                             $this.removeClass('moving');
                         });

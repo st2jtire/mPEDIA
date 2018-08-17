@@ -91,10 +91,9 @@
 /* 내신후기 */
 .btnSearchArea {display: flex}
 .btnSearchArea:after {content:""; display:block; height:0; clear:both;}
-.btnSearchArea a {float:left; width:69%; background:#fff; color:#1e1e1e; text-align:center; border-radius:0px; height:25px; font-size:13px; font-weight:500; margin-right: 6px; border: solid 1px #121212; padding-top: 9px; }
+.btnSearchArea a {float:left; width:69%; background:#fff; color:#1e1e1e; text-align:center; border-radius:0px; height:25px; font-size:13px; font-weight:500; margin-right: 6px; border: solid 1px #121212; padding-top: 7px; }
 /*.btnSearchArea .detailSearchBtn {width: 29%; color: #5f5f5f; font-weight: 400; border: solid 1px; border-radius: 0px; background:#fff url(../images/sub/naesin_open_icon.png) no-repeat right center;}*/
-.btnSearchArea .detailSearchBtn {width: 29%; color: #5f5f5f; font-weight: 400; border: solid 1px; border-radius: 0px; background:#fff; display: inline; padding-left: 0px;}
-.btnSearchArea .detailSearchBtn img {padding-top: 5px; padding-left: 10px;}
+.btnSearchArea .detailSearchBtn {width: 29%; min-width: 125px; color: #5f5f5f; font-weight: 400; border: solid 1px; border-radius: 0px; background:#fff url(../images/sub/naesin_icon_open.png) no-repeat right center; display: inline; padding-left: 0px;}
 
 .detailSearchBox {display: none;}
 .detailSearchBox .boardSearch {margin-top: -5px; margin-right: 0px; padding-right: 13px }

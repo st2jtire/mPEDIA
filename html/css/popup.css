@@ -21,7 +21,7 @@
 .layerPopup .cont {padding:10px 15px;}
 .layerPopup h4.tit  {font-size:15px; font-weight:500; padding-bottom:10px;}
 
-/* 쿠폰 */
+/* 학교검색 */
 #schoolSearchPop .tit {white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 #schoolSearchPop .layerInner {width:100%; padding:15px; box-sizing:border-box;}
 #schoolSearchPop .box {border:1px solid #222; border-width:1px 0 1px 0; padding:20px 0; text-align:center;}
@@ -38,7 +38,7 @@
 #schoolSearchPop .fileSearchArea:after {content:""; display:block; height:0; clear:both;}
 #schoolSearchPop .fileSearchArea span {float:left; width:69%; background:#fff; color:#1e1e1e; border-radius:0px; height:25px; font-size:15px; font-weight:700; margin-right: 6px; padding-top: 7px; }
 #schoolSearchPop .fileSearchArea .detailSearchBtn {width: 35%; color: #5f5f5f; font-weight: 400; border: solid 1px; border-radius: 0px; background:#fff; display: inline;  font-size:13px; text-align: center;
-padding-top: 7px; margin-left: 3px;}
+padding-top: 7px; margin-left: 3px; }
 
 #schoolSearchPop .boardList {border-top:1px solid #e9e9e9; height: 300px; overflow: scroll; }
 #schoolSearchPop .boardList li a.list {display:flex; border-bottom:1px solid #e9e9e9; padding-left: 10px;}
