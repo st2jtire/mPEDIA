@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import url("default.css");
+@import url("common.css");
+@import url("popup.css");
+
+/* 메인 상단 */
+#btnGnb {width:50px; height:50px; text-align:center;  text-indent:-9999px; background:url(../images/main/btn_menu.png) center center no-repeat;}
+.btnMy {position:absolute; top:0; right:0; width:50px; height:50px; text-align:center;  text-indent:-9999px; background:url(../images/main/btn_my.png) center center no-repeat;}
+#mainHeader {position:relative; background:url(../images/main/bg_main.jpg) no-repeat 0 0; background-size:cover;}
+#mainHeader:after {content:""; display:block; padding-bottom:80%;}
+#mainHeader h3 {position:absolute; top:50%; margin-top:-85px; left:0; right:0; text-align:center; color:#fff; font-size:17px; font-weight:4
+00;}
+#mainHeader h3 span {display:block; font-weight:900; color:#8f2227; padding-top:5px; font-size:26px;}
+#mainHeader .todayEnglishldiom {position:absolute; bottom:77px; left:15px; right:15px; background:#dbd6ce; background:rgba(219,214,206,0.5); padding:12px;}
+#mainHeader .todayEnglishldiom h4 {font-size:14px; color:#000; font-weight:700; padding-bottom:7px;}
+#mainHeader .todayEnglishldiom p {text-align:center; font-size:14px;  font-weight:500;}
+#mainHeader .todayEnglishldiom p span {border-bottom:2px solid #333; color:#000; display:inline-block; padding-bottom:3px; margin-right:5px;}
+#mainHeader .todayEnglishldiom p a img {position:relative; top:3px;}
+#mainHeader .todayEnglishldiom .btnToday {position:absolute; top:0; right:0; padding:10px;}
+#mainHeader .menu {position:absolute; bottom:15px; left:0px; right:0px;}
+#mainHeader .menu li {float:left; width:25%;}
+#mainHeader .menu a {display:block; height:41px; line-height:42px; color:#fff; background:#8f2227; text-align:center; font-size:14px; font-weight:500;}
+/********** 화면 너비가 760px 이상일 때에만 아래 코드를 실행 **********/
+@media only all and (min-width:760px) {
+#mainHeader {height:500px;}
+#mainHeader:after {display:none;}
+#mainHeader h3 {font-size:24px;}
+#mainHeader h3 span {font-size:36px;}
+}
+
+/* 메인 컨텐츠 */
+#contents li a {display:block; padding:10px 15px; border-bottom:1px solid #e8e8e8; font-size:10px;}
+#contents li a .tit {display:block; padding-bottom:5px; font-size:12px; font-weight:500;}
+#contents li a .div {padding-right:8px; margin-right:7px; color:#999; position:relative;}
+#contents li a .div:after {content:""; display:block; width:1px; height:9px; position:absolute; top:3px; right:0; background:#aaa;}
+#contents li a .day {color:#999;}
+#contents .more {display:block; margin:15px; text-align:center; height:46px; line-height:47px; background:#f3f3f3; font-size:14px; font-weight:500;}
+/********** 화면 너비가 760px 이상일 때에만 아래 코드를 실행 **********/
+@media only all and (min-width:760px) {
+
+}
+

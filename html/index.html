@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+ <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" /> -->
+  <title>INDEX</title>
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet" type="text/css" />
+  <meta name="theme-color" content="#b3191c" />
+  <style type="text/css">
+	/* 리셋 */
+	* {padding:0; margin:0; border:0; border:none; text-decoration:none; vertical-align:top; list-style:none; font-style:normal; font-weight:normal; text-align:left;}
+	h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal; }
+	table { border-collapse:collapse; border-spacing:0; width:100%; table-layout:fixed;/* 테이블 넓이값 고정 */ word-break:break-all;/* 글씨 넘칠씨 자동 줄바꿈. */}
+	body { font:87.5% /1.5 Noto Sans CJK KR, "Noto Sans CJK KR", Noto Sans KR, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", Dotum, "돋움", "애플 SD 산돌고딕 Neo", "Apple SD Gothic Neo", Ngothic, sans-serif; color:#222;}
+	input, select, textarea {font:100% Noto Sans CJK KR, "Noto Sans CJK KR", Noto Sans KR, "Noto Sans KR", "맑은 고딕", "Malgun Gothic", Dotum, "돋움", "애플 SD 산돌고딕 Neo", "Apple SD Gothic Neo", Ngothic, sans-serif;}
+	/* 스타일 */
+	#wrap {padding:50px 200px;}
+	#wrap h1 {text-align:center; font-size:30px; padding-bottom:10px; font-weight:500; color:#222;}
+	#wrap p {color:red; padding-bottom:10px; font-size:12px; text-align:right;}
+	thead th {font-size:14px; text-align:center; height:44px; font-weight:400; color:#000; vertical-align:middle; background:#fff8fa;}
+	tbody td {font-size:12px; padding:10px 10px; font-weight:300; vertical-align:middle;}
+	th,td {border:1px solid #777; color:#000; border:1px solid #777;}
+	th:first-child {border-left:1px solid #000;}
+	td:first-child {border-left:1px solid #000;}
+	#wrap a {color:#000; font-weight:300;}
+	#wrap a:hover {color:red;}
+	#wrap td:hover a {color:red;}
+	tbody tr {cursor:pointer;}
+	tbody:nth-child(even) {background:#f8f8ff;}
+	tbody:hover td[rowspan], tbody tr:hover td {background:#ced5f3; color:red; font-weight:400;}
+	#wrap tbody:hover td[rowspan] a, #wrap tbody tr:hover td a {color:red;}
+	@page {size:auto; margin:10mm;}
+	@media print{
+		#wrap {margin:0; padding:0; }
+	}
+	@media only all and (max-width:1200px) {
+		#wrap {padding:50px;}
+	}
+  </style>
+  <script type="text/javascript">
+	$(function(){
+		var txt = $('h1').text();
+		$('title').text('INDEX > ' + txt);
+		$('tr').each(function(){
+			var $this = $(this);
+			var href = $this.find('a').text();
+			$this.click(function(){
+				if ($this.find('a').length > 0 ){
+					window.open(href);
+				}
+
+			});
+		});
+	});
+  </script>
+ </head>
+
+ <body>
+  <!-- #wrap -->
+  <div id="wrap">
+  <h1>PEDIA</h1>
+	<p>* URL 있을시 완료된 파일</p>
+	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+		<colgroup>
+			<col width="18%" />
+			<col width="18%" />
+			<col width="18%" />
+			<col width="*" />
+		</colgroup>
+		<thead>
+			<tr>
+				<th>01 뎁스</th>
+				<th>02 뎁스</th>
+				<th>03 뎁스</th>
+				<th>URL</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>메인</td>
+				<td></td>
+				<td></td>
+				<td><a href="#none">html/00_main.html</a></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td>시스템</td>
+				<td></td>
+				<td></td>
+				<td><a href="#none">html/00_sistem.html</a></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td rowspan="2">오늘의 영단어</td>
+				<td>오늘의 영단어 리스트</td>
+				<td></td>
+				<td><a href="#none">html/00_today.html</a></td>
+			</tr>
+			<tr>
+				<td>오늘의 영단어 상세보기</td>
+				<td></td>
+				<td><a href="#none">html/00_today_view.html</a></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td rowspan="4">내신정복</td>
+				<td>강좌 리스트</td>
+				<td></td>
+				<td><a href="#none">html/01_01.html</a></td>
+			</tr>
+			<tr>
+				<td>강좌 상세보기</td>
+				<td></td>
+				<td><a href="#none">html/01_02.html</a></td>
+			</tr>
+			<tr>
+				<td>교재 리스트</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>교재 상세보기</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td rowspan="3">내신이야기</td>
+				<td>내신후기 리스트</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>내신후기 상세보기</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>내신후기 쓰기</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td rowspan="2">입시광장</td>
+				<td>입시광장 리스트</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>입시광장 상세보기</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td>운영센터</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td>회원서비스</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td>강의실</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td>결제정보</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td>이용문의</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td>회원정보</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<td>이용약관, 개인정보취급방침</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+  </div>
+  <!-- /#wrap -->
+ </body>
+</html>
