@@ -1,5 +1,7 @@
 <?php
 include_once("../include/head.inc.php");
+include_once("../include/quickmenu.inc.php");
+
 $MENU_CODE_TMP = str_replace("_","/",$_GET['menu_code']);
 $MENU_INFO_SQL = "SELECT *   FROM DYB_MENU_M_NEW WHERE menu_code = '$MENU_CODE_TMP' ";
 $MENU_INFO = mysql_fetch_object(mysql_query($MENU_INFO_SQL));
@@ -21,7 +23,6 @@ $ON_MENU_ROW3 = mysql_fetch_object(mysql_query($ON_MENU3));
 	<!-- #path -->
 	<div id="path">
 		<p class="inner">
-			<span>홈</span>
 			<?if(($goPage == "cate_list" || $goPage == "cate_info" ) && $menu_code <> "2_21" ){?>
 				<?
 				$SQL = "SELECT *   FROM DYB_STORE_CAT_NEW where  CAT_CODE = '".$sub_code."' and length(CAT_CODE) = '4'   ";
@@ -54,10 +55,10 @@ $ON_MENU_ROW3 = mysql_fetch_object(mysql_query($ON_MENU3));
 
 	<?
 	//본문내용=====================
-	 if($goPage){ include($goPage.".php"); }
-	//본문내용=====================
+	 if($goPage){ include($goPage.".php"); } 
+	//본문내용=====================	
 	?>
-
+	
 <?php
-include_once("../include/bottom.inc.php");
+include_once("../include/bottom.inc.php"); 
 ?>
