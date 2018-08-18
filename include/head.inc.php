@@ -1,25 +1,28 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
  <head>
+ 
+ <?php
+    include('../config/common.php');
+ ?>
+
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
   <meta name="theme-color" content="#b3191c" />
   <title>PEDIA</title>
   <?
-  /* ÆäÀÌÁö È­¸éÀÌ ¸ÞÀÎÀÌ³Ä ¼­ºê³Ä¿¡ µû¶ó È­¸é css º¯°æ*/
-	@$page = $_GET['page'];
-	if($page == "sub") {
+  // í˜„ìž¬ íŒŒì¼ì´ ë©”ì¸ì¸ì§€ë¥¼ êµ¬ë³„í•˜ì—¬ css íŒŒì¼ ë”°ë¡œ ì ìš©
+    if( basename($_SERVER["PHP_SELF"]) == "main.php" ){
   ?>
-	<link rel="stylesheet" type="text/css" href="../css/sub.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
   <?
-	}else{
+    }else{
   ?>
-	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/sub.css" />
   <?
-	}
+    }
   ?>
-
 
   <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="../js/style_common.js"></script>

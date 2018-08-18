@@ -8,7 +8,7 @@
 		<div class="cont">
 			<ul class="menu_1">
 				<li><a href="#none">강의실</a></li>
-				<li><a href="#none">결제 정보</a></li>
+				<li><a href="#none">결제 정보</a></li> 
 				<li><a href="#none">이용 문의</a></li>
 				<li><a href="#none">회원 정보</a></li>
 			</ul>
